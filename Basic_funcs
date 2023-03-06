@@ -1,0 +1,41 @@
+puts "Hello World"
+
+def say(words='hello')
+  puts words + '.'
+end
+
+say()
+say("hi")
+say("how are you")
+say("I'm fine")
+a = 5
+
+def some_method(number)
+  number = 7 # this is implicitly returned by the method
+end
+
+a = 5
+some_method(a)
+puts a
+
+a = [1, 2, 3]
+
+# Example of a method definition that does not mutate the argument
+def no_mutate(array)
+  array.last
+end
+
+p "Before no_mutate method: #{a.last}"
+no_mutate(a)
+p "After no_mutate method: #{a}"
+
+def add_three(number)
+  return number + 3
+  number + 4
+end
+
+returned_value = add_three(4)
+puts returned_value
+
+
+add_three(5).times { puts 'this should print 8 times'}
