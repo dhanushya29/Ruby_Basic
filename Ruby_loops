@@ -1,0 +1,43 @@
+quote = "Hi there today is the first working day of tha week march 2nd week . We can start working a efficient manner "
+puts quote
+letters = 'a'..'z'
+letters.each { |letter| print(letter+"\n") }
+for i in letters do
+    p i<<" "
+end
+
+#loops in Ruby
+
+nums=10 
+for i in 1..nums do
+    puts i," "
+end 
+
+while i<=nums 
+    print i," "
+    i+=1
+end
+
+answer = 3
+loop do   
+  print answer   
+  break if answer == 5   
+  answer+=1
+end
+
+
+i=0
+until i>5 do
+    print i," "
+    i+=1
+end 
+
+vote = gets.chomp.to_i
+
+#p vs puts vs print  
+
+str="123   "
+p str #"123"
+print str.strip," hi "
+print str.strip
+puts " Method".chomp("tho")
